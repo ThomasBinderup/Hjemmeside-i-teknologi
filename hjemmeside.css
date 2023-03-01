@@ -1,0 +1,1300 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/*Top bar added: */
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topBox {
+    border-bottom: 1px solid black;
+    padding: 45px;
+    padding-right: 100vw;
+    background-color: rgb(125, 219, 120);
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 1px 4px 0px black;
+}
+
+#logoBtn {
+    display: inline-block;
+    position: fixed;
+    font-size: 50px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#kategorierBtn {
+    position: fixed;
+    top: 65px;
+    font-size: 20px;
+    
+}
+
+#log-inBtn {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    
+}
+
+#opretBrugerBtn {
+    position: fixed;
+    top: 5px;
+    right: 85px;
+    font-size: 20px;
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+
+#doner {
+    position: fixed;
+    top: 5px;
+    right: 215px;
+    font-size: 20px;
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+
+#opretDonationBtn {
+    position: fixed;
+    top: 5px;
+    right: 378px;
+    font-size: 20px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+#grafikkortBtn {
+    position: fixed;
+    top: 65px;
+    left: 280px;
+    font-size: 20px;
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+
+#cpuBtn {
+    position: fixed;
+    top: 65px;
+    left: 383px;
+    font-size: 20px;
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+
+#mobiltelefonerBtn {
+    position: fixed;
+    top: 65px;
+    left: 443px;
+    font-size: 20px;
+    padding-right: 5px;
+    border-right: 1px solid black;
+
+}
+
+#computerBtn {
+    position: fixed;
+    top: 65px;
+    left: 585px;
+    font-size: 20px;
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+
+#profileBtn {
+    position: fixed;
+    top: 38px;
+    right: 2px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 2px black;
+    font-size: 50px;
+    z-index: 10;
+}
+
+#expandMore {
+    position: fixed;
+    top: 68px;
+}
+
+#headsetBtn {
+    position: fixed;
+    top: 65px;
+    left: 700px;
+    font-size: 20px;
+    padding-right: 5px;   
+}
+.topBtn, .topBtn1, #logoBtn {
+    z-index: 10;
+}
+.topBtn:hover, .topBtn1:hover {
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+}
+
+/*search bar added: */
+#searchBarInput {
+    position: absolute;
+    top: 100px;
+    left: 225px;
+    width: 250px;
+    height: 25px;
+    font-size: 14px;
+    z-index: -4;
+}
+
+#searchBarInput:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+#searchIcon {
+    position: absolute;
+    top: 100px;
+    left: 202px;
+    height: 25px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    z-index: -4;
+}
+
+#profileBtn:hover {
+    cursor: pointer;
+}
+
+#containerForFilter {
+    position: absolute;
+    top: 101px;
+    left: 540px;
+    border: 1px solid black;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(125, 219, 120);
+    z-index: -4;
+}
+
+#containerForFilter:hover {
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+}
+
+/*Drop down menu added from categories: */
+#dropDownMenuKategori {
+    position: fixed;
+    background-color: rgb(125, 219, 120);
+    top: 90.5px;
+    width: 200px;
+    height: 600px;
+    padding-top: 5px;
+    display: none;
+    box-shadow: 2px 0px 4px 0px rgb(0, 0, 0);
+    z-index: -4;
+}
+
+#dropDownMenuKategori div {
+    padding: 10px 2px 2px 6px;
+    border-bottom: 1px solid black;
+}
+
+#closeBtn {
+    position: absolute;
+    left: 175px;
+    top: 2px;
+    font-size: 21px;
+    padding: 2px;
+}
+
+#closeBtn:hover {
+    box-shadow: inset 0 0 0 10px rgba(101, 101, 101, 0.244);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropDownMenuBtn:hover {
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+}
+
+/*Images added to front page: */
+
+.imageContainer {
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    vertical-align: center;
+
+}
+
+#gridContainerImages {
+    display: grid;
+    grid-column-start: 300px;
+    width: 700px;
+    height: auto;
+    grid-template-columns: 160px 160px 160px 160px;
+    z-index: -4;
+    column-gap: 20px;
+    row-gap: 60px;
+}
+
+#outerGridContainerImages {
+    position: absolute;
+    top: 160px;
+    left: 225px;
+    z-index: -4;
+}
+
+#headerForImages {
+    position: absolute;
+    top: 118px;
+    left: 225px;
+    z-index: -4;
+}
+
+.imageText {
+    position: relative;
+    top: 0px;
+    left: 3px;
+    width: 100px;
+    height: 50px;
+}
+
+.location {
+    position: relative;
+    top: -5px;
+}
+
+/*Navigation system added: */
+#leftArrowBtn {
+    position: absolute;
+    left: 495px;
+    top: 1705px;
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+    border: none;
+    background-color: white;
+}
+
+#rightArrowBtn {
+    position: absolute;
+    left: 650px;
+    top: 1705px;
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+    border: none;
+    background-color: white;
+}
+
+#rightArrowBtn:hover, #leftArrowBtn:hover {
+    box-shadow: 0 0 5px 0px rgb(103, 103, 103);
+    background-color: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+}
+
+#pageCounterInput {
+    position: absolute;
+    left: 560px;
+    top: 1700px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    border: 1px solid black;
+    padding-left: 5px
+}
+
+.labelForInput {
+    position: absolute;
+    left: 525px;
+    top: 1710px;
+    width: 25px;
+    height: 25px;
+}
+
+#sideAntal {
+    position: absolute;
+    left: 605px;
+    top: 1692px;
+    width: 25px;
+    height: 25px;
+    display: inline;
+    width: 50px;
+}
+
+#actualRightArrow, #actualLeftArrow {
+    position: relative;
+}
+
+.imageText {
+    width: 155px;
+    overflow-wrap: break-word;
+}
+
+.title {
+    font-size: 14px;
+    max-height: 32px;
+    overflow: hidden;
+}
+
+#dropDownMenuKategori #kategorierHeader {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#logoBtn:hover {
+    cursor: pointer;
+}
+
+#submitBtn {
+    position: absolute;
+    top: 105px;
+    left: 490px;
+}
+
+/*opret bruger page */
+
+#opretBrugerPage {
+    display: none;
+}
+
+#opretBrugerContainer {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    width: 700px;
+    height: auto;
+    z-index: 5;
+}
+
+#headerOpretBruger {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#headerOpretBruger h1 {
+    position: relative;
+    top: 10px;
+    margin: 0px;
+}
+
+#backgroundContainer {
+    width: 400px;
+    max-height: 330px;
+    height: auto;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    box-shadow: 0px 0px 3px 0.5px black;
+    transform: translateX(-50%);
+    padding-left: 5px;
+    padding-top: 4px;
+    background-color: rgb(231, 255, 230);
+}
+
+#fornavnInput {
+    width: 185px;
+}
+
+#efternavnInput {
+    position: relative;
+    top: -32px;
+    left: 200px;
+    width: 185px;
+}
+
+#fornavnLabel {
+    font-size: 15px;
+}
+
+#efternavnLabel {
+    position: relative;
+    top: -22px;
+    left: 3px;
+    font-size: 15px;
+}
+
+#telefonnummerLabel {
+    position: relative;
+    left: -197px;
+    font-size: 15px;
+}
+
+#telefonnummerInput {
+    position: relative;
+    top: -10px;
+}
+
+#submitOpretBrugerBtn {
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    left: 156px;
+}
+
+.changeInputSize {
+    width: 385px;
+}
+
+#opretBrugerForm input {
+    height: 20px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.changeInputSize, .labelChangePos {
+    position: relative;
+    top: -9px;
+}
+
+#loginFromOpretBrugerPage {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    left: 290px;
+    top: -65px;
+    color: blue;
+    text-decoration: underline;
+}
+
+#loginFromOpretBrugerPage:hover {
+    cursor: pointer;
+}
+
+#checkboxOpretLabel {
+    position: relative;
+    top: -5px;
+}
+
+#submitOpretBrugerBtn:hover {
+    cursor: pointer;
+}   
+
+#opretBrugerForm input:focus {
+    border: 2px solid black;
+    outline: none;
+}
+
+#checkboxOpretInput {
+    position: relative;
+    top: -1px;
+}
+
+/* login page */
+#loginPage {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    width: 725px;
+    height: 700px;
+    display: none;
+    z-index: -4;
+}
+
+#loginPageContainer {
+    width: 400px;
+    height: 150px;
+    position: relative;
+    top: -20px;
+    left: 350px;
+    box-shadow: 0px 0px 3px 0.5px black;
+    transform: translateX(-50%);
+    padding-left: 5px;
+    padding-top: 4px;
+    background-color: rgb(231, 255, 230);
+    padding-top: 10px;
+    z-index: 5;
+}
+
+#headerLoginPage {
+    width: 200px;
+    position: relative;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-35%);
+}
+
+#loginForm input:not(#loginCheckBox) {
+    width: 385px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#opretBrugerFromLoginPage {
+    position: relative;
+    top: -5px;
+    left: 290px;
+    color: blue;
+    text-decoration: underline;
+}
+
+#opretBrugerFromLoginPage:hover {
+    cursor: pointer;
+}
+
+#submitLoginPage {
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+}
+
+#loginCheckBox, #labelCheckBox {
+    position: relative;
+    top: -22px;
+}
+
+/*opret donation page */
+
+#opretDonationPage {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    width: 725px;
+    height: 700px;
+}
+
+#opretDonationContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: -20px;
+    left: 350px;
+    box-shadow: 0px 0px 3px 0.5px black;
+    transform: translateX(-50%);
+    padding-left: 5px;
+    padding-top: 4px;
+    background-color: rgb(231, 255, 230);
+    padding-top: 10px;
+    z-index: 5;
+}
+
+#opretDonationHeader {
+    width: 406px;
+    position: relative;
+    left: 50%;
+    top: -10px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: -4;
+}
+
+#opretDonationSmallHeader {
+    position: relative;
+    top: -25px;
+    text-align: center;
+    width: 360px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -4;
+}
+
+#chooseFileLabel {
+    border: 1px solid black;
+    padding: 40px 154px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    border-radius: 1%;
+}
+
+#chooseFileLabel:hover {
+    background-color:#ddd;
+}
+
+#chooseFile {
+    position: absolute;
+}
+
+#titelInput {
+    margin-bottom: 10px;
+}
+
+#fileText {
+    position: relative;
+    top: -10px;
+}
+
+#positionLastInput {
+    position: relative;
+    top: -35px;
+}
+
+#noUpload1, #noUpload2, #noUpload3 {
+    color: red;
+}
+
+#uploaded {
+    color: green;
+}
+
+#opretDonationForm input {
+    width: 387px;
+}
+
+#lokationInput {
+    width: 180px !important;
+}
+
+#lokationInput1 {
+    width: 180px !important;
+    margin-left: 15px;
+}
+
+
+#extraInformationInput {  
+    margin-bottom: 5px;
+}
+
+#submitAnnonceBtn {
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    cursor: pointer;
+    left: 155px;
+}
+
+#opretDonationPage {
+    display: none;
+}
+
+.closeAndVerifySymbol {
+    position: relative;
+    top: 5px;
+}
+
+/* doner elektronik page */
+
+#donerElektronikPage {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    width: 725px;
+    height: 100px;
+    display: none;
+}
+
+#donerElektronikHeader {
+    width: 406px;
+    position: relative;
+    left: 50%;
+    top: -10px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: -4;
+}
+
+#donerElektronikSmallHeader {
+    position: relative;
+    top: -25px;
+    text-align: center;
+    width: 360px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -4;
+}
+
+#donerElektronikContainer {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: -20px;
+    left: 350px;
+    box-shadow: 0px 0px 3px 0.5px black;
+    transform: translateX(-50%);
+    padding-left: 5px;
+    padding-top: 4px;
+    background-color: rgb(231, 255, 230);
+    padding-top: 10px;
+    z-index: 5;
+}
+
+#donerElektronikForm input {
+    width: 387px;
+}
+#donerElektronikForm label {
+    margin-bottom: 200px;
+}
+
+#tilføjStedInput {
+    position: absolute;
+    visibility: hidden;
+    top: -200px;
+}
+
+#afhentningBilledeLabel {
+    padding: 40px 121px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    border-radius: 1%;
+    border: 1px solid black;
+    position: relative;
+    top: 12px;
+}
+
+#afhentningBilledeLabel:hover {
+    background-color:#ddd;
+    cursor: pointer;
+}
+
+#lokationText {
+    display: inline;
+    position: relative;
+    top: 10px;
+}
+
+#submitDonerElektronik {
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    top: -210px;
+    cursor: pointer;
+}
+
+#tilføjStedText {
+    position: relative;
+    top: -208px;
+}
+
+/*reklamer */
+
+.reklame {
+    border: 2px solid black;
+    width: 196px;
+    height: 510px;
+    z-index: -20;
+    writing-mode: vertical-lr;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#reklame1 {
+    position: absolute;
+    top: 90px;
+    background-color: white;
+}
+
+#reklame2 {
+    position: absolute;
+    width: 160px;
+    top: 90px;
+    right: 0px;
+    background-color: white;
+}
+
+#reklame3 {
+    position: absolute;
+    width: 160px;
+    right: 160px;
+    top: 90px;
+    background-color: white;
+}
+
+#reklame4 {
+    position: absolute;
+    width: 160px;
+    right: 160px;
+    top: 610px;
+    background-color: white;
+}
+
+#reklame5 {
+    position: absolute;
+    width: 160px;
+    right: 0px;
+    top: 610px;
+    background-color: white;
+}
+
+#reklame6 {
+    position: absolute;
+    width: 160px;
+    right: 0px;
+    top: 1130px;
+    background-color: white;
+}
+
+#reklame7 {
+    position: absolute;
+    width: 160px;
+    right: 160px;
+    top: 1130px;
+    background-color: white;
+}
+
+#reklame8 {
+    position: absolute;
+    top: 610px;
+    background-color: white;
+}
+
+#reklame9 {
+    position: absolute;
+    top: 1130px;
+    background-color: white;
+}
+
+/*profile page */
+#profilePage h1 {
+    position: relative;
+    top: -65px;
+
+}
+
+#profilePage {
+    position: absolute;
+    left: 220px;
+    top: 160px;
+    background-color: rgb(231, 255, 230);
+    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
+    width: 700px;
+    height: auto;
+    display: none;
+}
+
+#profileImage {
+    width: 100px;
+    left: 100px;
+    position: relative;
+    top: -70px;
+    left: 10px;
+    box-shadow: 0 0 2px 0px rgb(0, 0, 0);
+}
+
+#profileEmail {
+    position: absolute;
+    top: 21px;
+    left: 120px;
+    font-size: 22px;
+    padding: 3px 5px;
+    width: auto;
+    display: inline;
+    border-bottom: 1.5px solid black;
+}
+
+#profileTelefonnummer {
+    position: absolute;
+    top: 57px;
+    padding: 3px 5px;
+    left: 120px;
+    font-size: 22px;
+    width: auto;
+    display: inline;
+}
+
+#profilePageTopBar {
+    width: 669px;
+    height: 50px;
+    position: relative;
+    top: -70px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    column-gap: 5px;
+    padding: 5px;
+}
+
+.smallTopBarBtn {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 2px 0px rgb(0, 0, 0);
+    background-color:rgb(172, 253, 172);
+}
+
+#profilePageTopBar div:hover {
+    cursor: pointer;
+    background-color: rgb(125, 219, 120);
+}
+
+#opslagBtn {
+    background-color: rgb(125, 219, 120);
+}
+
+#opslagGrid {
+    position: relative;
+    top: -65px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+    row-gap: 60px;
+    padding: 0px 27px;
+    width: 700px;
+}
+
+#opslagGrid div {
+    border: 1px solid black;
+    height: 200px;
+}
+
+.opslagText {
+    position: relative;
+    top: 17px;
+    left: 3px;
+}
+
+.opslagBtn1 {
+    max-width: 90px;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    left: 5px;
+    top: -50px;
+    cursor: pointer;
+}
+
+.opslagBtn2 {
+    max-width: 90px;
+    width: 90px;
+    height: 30px;
+    top: -50px;
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+
+.opslagImg {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#profileLogoutBtn {
+    position: absolute;
+    top: 7px;
+    left: 610px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 2px 5px 5px 5px;
+    background-color:rgb(172, 253, 172);
+    cursor: pointer;
+    box-shadow: 0 0 2px 0px rgb(0, 0, 0);
+}
+
+#profileLogoutBtn:hover {
+    background-color: rgb(125, 219, 120);
+}
+
+#profileLogoutIcon {
+    position: relative;
+    top: 4px;
+    font-size: 18px;
+    left: 2px; 
+}
+
+.genre {
+    width: 139px;
+    position: relative;
+    top: 5px;
+    height: 22px;
+}
+
+#andetOptionInput {
+    width: 131px !important;
+    position: relative;
+    top: 8px;
+    left: 49px;
+    height: 16px;
+    display: none;
+}
+
+#profileName {
+    position: absolute;
+    top: -15px;
+    left: 120px;
+    font-size: 22px;
+    padding: 3px 5px;
+    width: auto;
+    display: inline;
+    border-bottom: 1.5px solid black;
+}
+
+/*display electronic product */
+
+#productPage {
+    position: absolute;
+    left: 220px;
+    top: 160px;
+    background-color: rgb(231, 255, 230);
+    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
+    width: 700px;
+    height: 400px;
+    display: none;
+}
+
+#backwardBtn {
+    border: 1px solid black;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+#backwardBtn span {
+    font-size: 30px;
+    color: black;
+}
+
+#backwardBtn span:hover {
+    color: rgba(0, 0, 0, 0.731);
+}
+
+#productPageImage {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 0 black;
+}
+
+#productPageInformation {
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    left: 310px;
+    top: 50px;
+}
+
+#productPageTitel {
+    border-bottom: 1px solid black;
+    width: 120px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#productPageKategori {
+    width: 120px;
+    margin-top: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#productPagePostnummerBy {
+    border-bottom: 1px solid black;
+    width: 120px;
+    margin-top: 8px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#productPageActualTitel {
+   display: inline-block;
+   max-width: 120px; 
+   word-break:break-all;
+}
+
+#productPageActualKategori {
+    display: inline-block;
+    max-width: 120px; 
+    word-break:break-all;
+}
+
+#productPageActualPostnummerBy {
+    display: inline-block;
+    max-width: 120px; 
+    word-break:break-all;
+    margin-bottom: 5px;
+}
+
+#productPageInformationText {
+    position: absolute;
+    top: 98px;
+    left: 140px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+#productPageInformationActualText {
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    display: inline-block;
+    width: 230px;
+    word-break:break-all;
+}
+
+#productPageRedigerOpslag {
+    position: absolute;
+    top: 235px;
+    left: -120px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#productPageRedigerOpslag:hover {
+    color: rgb(91, 91, 243);
+}
+
+#productPageKontaktInformation {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 130px;
+    margin-bottom: 3px;
+    position: relative;
+}
+
+#productName {
+    margin-bottom: 6px;
+}
+
+#productEmail {
+    margin-bottom: 6px;
+    
+}
+
+#kontaktDonator {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+}
+
+#backgroundImage {
+    z-index: -1000;
+    position: absolute;
+    left: 200px;
+    opacity: 0.2;
+}
+
+#backgroundImage2 {
+    position: absolute;
+    z-index: -1000;
+    left: 200px;
+    top: 533px;
+    opacity: 0.2;
+}
+
+#backgroundImage1 {
+    position: absolute;
+    z-index: -1000;
+    left: 735px;
+    top: 0px;
+    opacity: 0.2;
+}
+
+#backgroundImage3 {
+    position: absolute;
+    z-index: -1000;
+    left: 735px;
+    top: 533px;
+    opacity: 0.2;
+    object-position: -330px 0;
+}
+
+#backgroundImage4 {
+    position: absolute;
+    z-index: -1000;
+    left: 735px;
+    top: 1066px;
+    opacity: 0.2;
+}
+
+#backgroundImage5 {
+    position: absolute;
+    z-index: -1000;
+    left: 200px;
+    top: 1066px;
+    opacity: 0.2;
+}
+
+#backgroundImage6 {
+    position: absolute;
+    position: absolute;
+    left: 200px;
+    top: 1599px;
+    width: 58.5%;
+    opacity: 0.2;
+    z-index: -1000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    mix-blend-mode: overlay;
+}
+
+#backgroundImageHelper {
+    width: 58.5%;
+    position: absolute;
+    left: 200px;
+    top: 533px;
+    object-position: 0 -70px;
+    display: none;
+    z-index: -1000;
+    opacity: 0.2;
+}
+
+#footer {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    top: 1800px;
+    background-color: rgb(172, 253, 172);
+    padding-left: 420px;
+    padding-top: 15px;
+    box-shadow: 0 0 2px 1px black;
+}
+
+#footerGrid {
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+
+.footerGridItem {
+    height: 139px;
+}
+
+.footerSymbol {
+    position: relative;
+    top: 5px;
+}
+
+.footerGridItem span {
+    font-weight: bold;
+}
+
+#footerOmOsText {
+    position: relative;
+    top: -14px;
+    left: 15px;
+    width: 230px;
+}
+
+#footerGridList {
+    position: relative;
+    top: -20px;
+    left: -10px;
+}
+
